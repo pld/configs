@@ -33,10 +33,10 @@ set background=light " better w/highlights we are using a dark background
 " Files/Backups
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set backup " make backup file
-set backupdir=$MYVIM/vimfiles/backup " where to put backup file
-set directory=$MYVIM/vimfiles/temp " directory is the directory for temp file
+set backupdir=~/.vim/vimfiles/backup " where to put backup file
+set directory=~/.vim/vimfiles/temp " directory is the directory for temp file
 set backupskip=/tmp/*,/private/tmp/* " backup tmps will mess up cron
-set makeef=$MYVIM/error.err " When using make, where should it dump the file
+set makeef=~/.vim/error.err " When using make, where should it dump the file
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim UI
