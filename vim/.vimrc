@@ -27,7 +27,6 @@ let java_highlight_functions="indent"
 let java_highlight_java_lang_ids=1
 let java_ignore_javadoc=1
 let python_highlight_all=1
-colorscheme solarized " my theme
 set background=dark " better w/highlights we are using a dark background
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,4 +93,3 @@ set textwidth=80
 " Highlight text over 80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
-
