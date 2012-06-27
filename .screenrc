@@ -1,0 +1,60 @@
+# disable the splash screen
+# why is this not the default??
+startup_message off
+
+# use ctrl+x as the escape character,
+# so screen-in-screening is not insane
+#escape ^Xx
+
+# kill all windows and processes when the
+# terminal is closed. this is NOT desirable
+# most of the time
+#autodetach off
+
+# with ctrl + arrow keys
+bindkey ^[[1;5C next
+bindkey ^[[1;5D prev
+
+# create new tab with ctrl + t
+bindkey ^t screen
+
+# disable annoying visual bell
+vbell off
+
+# scroll back a long way (^A Esc)
+defscrollback 6000
+
+# show hostname and window list in the status bar
+# -----------------------------------------------
+# Color table:
+# 0 Black             .    leave color unchanged
+# 1 Red               b    blue
+# 2 Green             c    cyan
+# 3 Brown / yellow    d    default color
+# 4 Blue              g    green           b    bold
+# 5 Purple            k    blacK           B    blinking
+# 6 Cyan              m    magenta         d    dim
+# 7 White             r    red             r    reverse
+# 8 unused/illegal    w    white           s    standout
+# 9 transparent       y    yellow          u    underline
+# -----------------------------------------------
+# for example this would be for the following:
+# ----
+# %{gk}   green on black
+# %H      hostname (in literal brackets)
+# ----
+# %{wk}   white on black
+# %-w     windows BEFORE active
+# ----
+# %{kw}   black on white
+# %n %t   current window number and title
+# ----
+# %{-}    undo last color
+# %+w     windows AFTER active
+# ----
+# hardstatus alwayslastline '%{gk}[ %H ]  %{wk}%-w%{kw}%n %t%{-}%+w'
+# ------------------------------------------------
+
+hardstatus alwayslastline
+hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+
