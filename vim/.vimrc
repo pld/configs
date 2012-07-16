@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
+" call pathogen#infect()
 set nocompatible " get out of horrible vi-compatible mode
 filetype on " detect the type of file
 set history=2000 " How many lines of history to remember
@@ -90,6 +90,6 @@ set foldopen-=search " don't open folds when you search into them
 set foldopen-=undo " don't open folds when you undo stuff
 
 set textwidth=80
-" Highlight text over 80
+" Highlight text over 79 characters
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match OverLength /\%80v.\+/
