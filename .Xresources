@@ -1,0 +1,5 @@
+xterm*borderWidth: 0
+xterm*background: #382F33
+xterm*foreground: #FFFF00
+xterm*faceName: terminus:bold:pixelsize=14
+xterm*metaSendsEscape: true
