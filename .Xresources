@@ -3,3 +3,45 @@ xterm*background: #382F33
 xterm*foreground: #FFFF00
 xterm*faceName: terminus:bold:pixelsize=14
 xterm*metaSendsEscape: true
+
+! urxvt settings
+URxvt.background   : #202020
+URxvt.foreground   : #F2F27E
+URxvt.font         : -*-*-*-*-*-*-18-*-*-*-*-*-*-*
+URxvt.scrollBar    : False
+URxvt.pointerBlank : true
+
+URxvt.perl-ext-common : default,matcher
+URxvt.urlLauncher     : /usr/bin/firefox
+URxvt.matcher.button  : 1
+
+! urxvt key mappings
+URxvt.keysym.Control-Up     :   \033[1;5A
+URxvt.keysym.Control-Down   :   \033[1;5B
+URxvt.keysym.Control-Left   :   \033[1;5D
+URxvt.keysym.Control-Right  :   \033[1;5C
+
+! black
+URxvt.color0  : #202020
+URxvt.color8  : #202020
+! red
+URxvt.color1  : #bb4444
+URxvt.color9  : #bb4444
+! green
+URxvt.color2  : #44bb44
+URxvt.color10 : #44bb44
+! yellow
+URxvt.color3  : #bbbb44
+URxvt.color11 : #bbbb44
+! blue
+URxvt.color4  : #4444aa
+URxvt.color12 : #4444aa
+! magenta
+URxvt.color5  : #bb44bb
+URxvt.color13 : #bb44bb
+! cyan
+URxvt.color6  : #44bbbb
+URxvt.color14 : #44bbbb
+! white
+URxvt.color7  : #999999
+URxvt.color15 : #999999
