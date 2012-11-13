@@ -98,7 +98,7 @@ chatnets = {
   SILC = { type = "SILC"; };
   freenode = {
     type = "IRC";
-    autosendcmd = "/^msg nickserv [YOUR NIK] watermelon;wait -freenode 2000";
+    autosendcmd = "/^msg nickserv [YOUR NIK] [YOUR PASS];wait -freenode 2000";
   };
 };
 
