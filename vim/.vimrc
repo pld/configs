@@ -1,13 +1,14 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" call pathogen#infect()
+call pathogen#infect()
 set nocompatible " get out of horrible vi-compatible mode
 filetype on " detect the type of file
 set history=2000 " How many lines of history to remember
 set cf " enable error files and error jumping
 set ffs=dos,unix,mac " support all three, in this order
 filetype plugin on " load filetype plugins
+filetype plugin indent on " load filetype plugins
 set viminfo+=! " make sure it can save viminfo
 set isk+=_,$,@,%,#,- " none of these should be word dividers, so make them not be
 
