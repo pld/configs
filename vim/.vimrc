@@ -94,3 +94,6 @@ set textwidth=80
 " Highlight text over 79 characters
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
+augroup filetypedetect
+    au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
+augroup END
