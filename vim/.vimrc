@@ -90,10 +90,9 @@ set foldlevel=100 " Don't autofold anything (but I can still fold manually)
 set foldopen-=search " don't open folds when you search into them
 set foldopen-=undo " don't open folds when you undo stuff
 
-set textwidth=80
-" Highlight text over 79 characters
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%80v.\+/
+set textwidth=79
+set colorcolumn=+1
+
 augroup filetypedetect
     au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 augroup END
