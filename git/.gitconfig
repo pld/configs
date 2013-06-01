@@ -27,7 +27,13 @@
   untracked = cyan
 
 [alias]
-  co = checkout
-  s = status
   b = branch
+  cl = clone
+  cm = commit
+  co = checkout
   d = diff
+  pl = pull
+  ps = push
+  r = rebase
+  s = status
+  st = stash
