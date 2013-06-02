@@ -32,6 +32,7 @@
   cm = commit
   co = checkout
   d = diff
+  f = fetch
   pl = pull
   ps = push
   r = rebase
