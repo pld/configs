@@ -34,9 +34,10 @@ plugins=(bundler, python, rvm, brew, jruby, pip, rails, git, ruby, py)
 
 source $ZSH/oh-my-zsh.sh
 
-alias c="clear"
+alias c='clear'
 alias ll='ls -lahG'
-alias pss="ps aux"
+alias nt='nosetests -x --nocapture'
+alias pss='ps aux'
 
 alias be='bundle exec'
 alias ss='bundle exec trinidad'
