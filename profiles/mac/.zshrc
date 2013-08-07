@@ -34,20 +34,20 @@ plugins=(bundler, python, rvm, brew, jruby, pip, rails, git, ruby, py)
 
 source $ZSH/oh-my-zsh.sh
 
-alias c="clear"
+alias c='clear'
 alias ll='ls -lahG'
-alias pss="ps aux"
+alias nt='nosetests -x --nocapture'
+alias pss='ps aux'
 
 alias be='bundle exec'
 alias ss='bundle exec trinidad'
 alias sc='bundle exec rails console'
 alias cuke='bundle exec cucumber'
 alias code='cd $CODE_DIR'
-alias gs='git status'
-alias glog='git log'
+alias g='git'
+alias glog='git log --oneline'
 alias ghist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gitbump='git commit --amend -C HEAD'
-alias gitp='git push origin'
 
 # This assumes Git was installed by Homebrew to /usr/local:
 #source /usr/local/etc/bash_completion.d/*
