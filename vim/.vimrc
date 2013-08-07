@@ -1,7 +1,18 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-rails'
+Bundle 'guns/vim-clojure-static'
+Bundle 'nvie/vim-flake8'
+
 set nocompatible " get out of horrible vi-compatible mode
 filetype on " detect the type of file
 set history=2000 " How many lines of history to remember

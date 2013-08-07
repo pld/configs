@@ -27,6 +27,7 @@
   untracked = cyan
 
 [alias]
+  a = add
   b = branch
   cl = clone
   cm = commit
@@ -38,3 +39,4 @@
   r = rebase
   s = status
   st = stash
+  t = tag
