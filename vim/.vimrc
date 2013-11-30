@@ -13,6 +13,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'guns/vim-clojure-static'
 Bundle 'nvie/vim-flake8'
 
+autocmd BufWritePost *.py call Flake8() " run flake8 on python file write
+
 set nocompatible " get out of horrible vi-compatible mode
 filetype on " detect the type of file
 set history=2000 " How many lines of history to remember
