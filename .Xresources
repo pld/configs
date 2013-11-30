@@ -7,8 +7,8 @@ xterm*metaSendsEscape: true
 ! urxvt settings
 URxvt.background   : #202020
 URxvt.foreground   : #F2F27E
-URxvt.font: xft:FiraMono-Regular:size=11
-URxvt.boldFont: xft:FiraMono-Bold:size=11:style=bold
+URxvt.font: xft:terminus:size=12
+URxvt.boldFont: xft:terminus:bold:size=12
 URxvt.scrollBar    : False
 URxvt.pointerBlank : true
 
